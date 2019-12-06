@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Deploy to Surge
       run: |
-        npm i -g surge
-        surge --domain splitti.me
+        npm i surge
+        node_modules/.bin/surge --domain splitti.me
