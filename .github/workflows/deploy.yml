@@ -11,5 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Deploy to Surge
       run: |
+        export SURGE_LOGIN=mr.avgp@gmail.com
+        export SURGE_TOKEN=14702e250c70d050c8d27d0239e1f61a
         npm i surge
-        node_modules/.bin/surge --domain splitti.me
+        node_modules/.bin/surge . splitti.me
